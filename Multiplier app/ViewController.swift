@@ -76,7 +76,7 @@ class ViewController: UIViewController {
             
         multiple = Int(numberTxt.text!)!
         newSum = runningSum + multiple
-        updateLbl(runningSum, mul: multiple, newSum: newSum)
+        changeLabel(runningSum, mul: multiple, newSum: newSum)
         runningSum += multiple
             
         }
@@ -90,7 +90,7 @@ class ViewController: UIViewController {
         findMultiplier()
     }
     
-    func updateLbl(oldSum: Int, mul: Int, newSum: Int) {
+    func changeLabel(oldSum: Int, mul: Int, newSum: Int) {
         if newSum >= MAX_SUM {
            resetGame()
         }
